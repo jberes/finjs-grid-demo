@@ -1,0 +1,19 @@
+{
+    "devtools_port": 9090,
+    "startup_app": {
+        "name": "OpenfinPOC",
+        "description": "FinJS NYC Fall 2018",
+        "url": "http://localhost:4200",
+        "uuid": "OpenfinPOC-0o5ju1tkwwt",
+        "autoShow": true
+    },
+    "runtime": {
+        "arguments": "--enable-experimental-web-platform-features",
+        "version": "beta"
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "FinJS NYC Fall 2018",
+        "name": "FinJS NYC"
+    }
+}
