@@ -33,7 +33,7 @@ $exclude: (
             }
         }
 
-        @include igx-theme($finjs-palette ,$exclude);
+        @include igx-theme($finjs-palette ,$exclude:$exclude);
 
         // VAR COLORS
     
@@ -60,14 +60,12 @@ $exclude: (
             $header-background: igx-color($finjs-palette, 'grays', 800),
             $header-text-color: $white-70,
             $header-border-color: $white-40,
-            $row-indentation-background: #000,
 
             $row-selected-background: #333,
             $row-selected-text-color: text-contrast(#333),
             $row-hover-background: #222,
             $row-hover-text-color: text-contrast(#222),
             $row-border-color: #333,
-            $row-content-focus-background: rgba(106, 227, 104, .20),
 
             $cell-selected-background: igx-color($finjs-palette, 'primary'),
             $cell-selected-text-color: igx-color($finjs-palette, 'grays', 900),
@@ -106,17 +104,10 @@ $exclude: (
     
         // CHIPS THEME
         $finjs-chip-theme: igx-chip-theme(
-            $chip-background: #333,
-            $chip-hover-background: #444,
-            $dir-icon-color: $white-60,
-            $order-icon-color:$white-60,
-            $selected-chip-background:#222,
-            $chip-focus-border-color: igx-color($finjs-palette, 'secondary', 500),
-            $selected-chip-focus-border-color: igx-color($finjs-palette, 'secondary', 500),
-            $selected-chip-hover-border-color: igx-color($finjs-palette, 'secondary', 500),
-            $remove-icon-hover-color: igx-color($finjs-palette, 'secondary', 500),
-            $order-icon-hover-color: igx-color($finjs-palette, 'secondary', 500),
-            $remove-icon-color: $white-50
+            $palette: $finjs-palette,
+            $background: #333,
+            $hover-background: #444,
+            $focus-background:#222
         );
     
         @include igx-chip($finjs-chip-theme);
